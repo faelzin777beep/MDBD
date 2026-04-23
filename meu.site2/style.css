@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+header {
+    background-color: #020617;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #020617;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.botao {
+    background-color: #38bdf8;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: white;
+}
+
+.container {
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #020617;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #020617;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+}
