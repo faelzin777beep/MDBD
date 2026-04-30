@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
+    background-color: #1a1a2e;
+    color: #f1f1f1;
 }
 
 header {
-    background-color: #020617;
+    background-color: #16213e;
     padding: 15px;
+    position: relative;
 }
 
 nav {
@@ -17,7 +18,7 @@ nav {
 }
 
 nav a {
-    color: #38bdf8;
+    color: #f39c12;
     text-decoration: none;
     font-weight: bold;
 }
@@ -29,12 +30,12 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #020617;
+    background-color: #16213e;
 }
 
 .hero h1 {
     font-size: 40px;
-    color: #38bdf8;
+    color: #f39c12;
 }
 
 .hero p {
@@ -42,12 +43,14 @@ nav a:hover {
 }
 
 .botao {
-    background-color: #38bdf8;
+    background-color: #f39c12;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
     margin-top: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 .botao:hover {
@@ -65,7 +68,7 @@ nav a:hover {
 }
 
 .card {
-    background-color: #020617;
+    background-color: #16213e;
     padding: 20px;
     flex: 1;
     min-width: 200px;
@@ -74,12 +77,147 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #020617;
+    background-color: #16213e;
 }
 
-/* RESPONSIVO */
+.carrinho-icone {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #f39c12;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrinho-icone span {
+    background: #e63946;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.produto {
+    background-color: #16213e;
+    padding: 20px;
+    flex: 1;
+    min-width: 220px;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    color: #f39c12;
+    margin-top: 0;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.carrinho-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.carrinho-modal.ativo {
+    display: flex;
+}
+
+.carrinho-conteudo {
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid #f39c12;
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #2a2a4a;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.qtd-controle button {
+    background: #f39c12;
+    border: none;
+    color: black;
+    width: 28px;
+    height: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remover {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carrinho-total {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.botao-fechar {
+    background: #2a2a4a;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.botao-fechar:hover {
+    background: #3a3a5a;
+}
+
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .carrinho-icone {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header {
+        position: static;
     }
 }
