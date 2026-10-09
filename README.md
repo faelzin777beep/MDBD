@@ -29,5 +29,5 @@ O Sistema Acadêmico Banco de Dados é um projeto desenvolvido para organizar e 
 
 - `BRmodelo1/`: Pasta contendo diagramas ou modelos visuais do banco de dados, como diagramas ER (Entidade-Relacionamento).
 - `MDB_RAFA.sql`: Script SQL para criação e/ou inserção de dados no banco de dados acadêmico.
-- `escola (1).sql`: Script SQL relacionado à criação da estrutura do banco de dados da escola, incluindo tabelas, relacionamentos e possíveis dados iniciais.
-- `escola_mdbd.sql`: Script SQL que pode conter a definição completa ou parte do banco de dados acadêmico, incluindo tabelas, chaves e relacionamentos.(Banco mais recente que eu fiz)
+- `escola (1).sql`: Script SQL relacionado à criação da estrutura do banco de dados da escola, incluindo tabelas, relacionamentos e possíveis dados iniciais.(Banco mais recente)
+- `escola_mdbd.sql`: Script SQL que pode conter a definição completa ou parte do banco de dados acadêmico, incluindo tabelas, chaves e relacionamentos.
